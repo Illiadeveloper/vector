@@ -1,1 +1,3 @@
-[TEMP]: this is Vector, with all that's functions
+# Vector
+**Class**:
++ [_Compressed_pair](docs/CompressedPair.md)
