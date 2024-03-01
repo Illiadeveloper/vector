@@ -1,11 +1,20 @@
 # _Container_proxy
 
-## **Code:** [Vector/ymemory.h](Vector/ymemory.h#L74)
+## **Code:** [Vector/ymemory.h](../Vector/ymemory.h#L74)
 
-The _Container_proxy class serves as a proxy object facilitating the linkage between a container (represented by the _Container_base12 class) and its iterators (represented by the _Iterator_base12 class). It acts as an auxiliary component for managing the iterators of the container.
+### Fields:
+    _MyCont: Pointer to the associated _Container_base12 object, representing the container to which the proxy belongs.
 
-The primary purpose of _Container_proxy is to efficiently manage the container's iterators in scenarios where the container is moved or copied. For instance, when the container is copied, all iterators associated with the original container need to be reassigned to work with the new container. This process of updating the relationships between iterators and the container is facilitated using the _Container_proxy object.
+    _MyfirstIter: Mutable pointer to the first _Iterator_base12 object in the linked list of iterators associated with the container.
 
-Additionally, _Container_proxy also provides the capability to break the connections between the container and its iterators (e.g., upon the destruction of the container), thus preventing memory access errors and ensuring proper resource cleanup.
+### Methods:
+    Inline Default Constructor: Initializes the _Container_proxy object.
 
-In summary, the _Container_proxy class plays a crucial role in managing the lifecycle of container iterators and ensures their correct interaction with the container in various usage scenarios.
+    Inline Constructor with _Container_base12* _Cont Parameter: Initializes the _Container_proxy object with a pointer to the associated container _Cont.
+
+### Functionality:
+    Connection Management: _Container_proxy manages connections between containers and iterators. It stores information about the associated container and maintains a linked list of iterators associated with that container.
+
+    Iterators Management: The _MyfirstIter field points to the first iterator in the linked list of iterators associated with the container. This allows efficient management and traversal of iterators associated with the container.
+
+    Thread Safety: Operations involving _Container_proxy are performed inline and are therefore inherently thread-safe, as they do not involve shared data accessed by multiple threads simultaneously.

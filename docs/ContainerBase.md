@@ -1,8 +1,8 @@
 # _Container_base12
 
-## **Code:** [Vector/ymemory.h](Vector/ymemory.h#L85)
+## **Code:** [Vector/ymemory.h](../Vector/ymemory.h#L85)
 
-The _Container_base12 constructor by default creates a container object.
+**The _Container_base12 constructor by default creates a container object.**
 
 The ```_Orphan_all()``` function severs all connections with iterators. For example, if we have a container with multiple iterators, this function "detaches" the iterators from the container to avoid incorrect access to the container's data.
 
