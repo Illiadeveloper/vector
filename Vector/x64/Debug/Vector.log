@@ -1,2 +1,35 @@
-﻿  Vector.cpp
-  Vector.vcxproj -> D:\Programming\Visual Studio\C++\Vector\Vector\x64\Debug\Vector.exe
+﻿  main.cpp
+D:\Programming\Visual Studio\C++\Vector\Vector\Vector\Vector.h(54,24): error C2440: static_cast: невозможно преобразовать "overloaded-function" в "const _Myvec *"
+D:\Programming\Visual Studio\C++\Vector\Vector\Vector\Vector.h(54,24): error C2440:         with
+D:\Programming\Visual Studio\C++\Vector\Vector\Vector\Vector.h(54,24): error C2440:         [
+D:\Programming\Visual Studio\C++\Vector\Vector\Vector\Vector.h(54,24): error C2440:             _Myvec=std::vector<int,std::allocator<int>>
+D:\Programming\Visual Studio\C++\Vector\Vector\Vector\Vector.h(54,24): error C2440:         ]
+  (компиляция исходного файла "main.cpp")
+  D:\Programming\Visual Studio\C++\Vector\Vector\Vector\Vector.h(54,24):
+  Не существует контекста, в котором такое преобразование возможно
+  D:\Programming\Visual Studio\C++\Vector\Vector\Vector\Vector.h(54,24):
+  контекст создания экземпляра шаблона (сначала самый старый)
+  	D:\Programming\Visual Studio\C++\Vector\Vector\Vector\main.cpp(13,46):
+  	выполняется компиляция ссылки на экземпляр класс шаблон функции "vec::_Vector_const_iterator<std::vector<int,std::allocator<int>>>"
+  	D:\Programming\Visual Studio\C++\Vector\Vector\Vector\Vector.h(53,14):
+  	во время компиляции функции-члена класс шаблон "void vec::_Vector_const_iterator<std::vector<int,std::allocator<int>>>::_Verify_offset(const __int64) noexcept"
+  		D:\Programming\Visual Studio\C++\Vector\Vector\Vector\Vector.h(69,17):
+  		см. первую ссылку на "vec::_Vector_const_iterator<std::vector<int,std::allocator<int>>>::_Verify_offset" в "vec::_Vector_const_iterator<std::vector<int,std::allocator<int>>>::operator +="
+  		D:\Programming\Visual Studio\C++\Vector\Vector\Vector\Vector.h(76,9):
+  		см. первую ссылку на "vec::_Vector_const_iterator<std::vector<int,std::allocator<int>>>::operator +=" в "vec::_Vector_const_iterator<std::vector<int,std::allocator<int>>>::operator +"
+  		D:\Programming\Visual Studio\C++\Vector\Vector\Vector\main.cpp(27,52):
+  		см. первую ссылку на "vec::_Vector_const_iterator<std::vector<int,std::allocator<int>>>::operator +" в "main"
+  
+D:\Programming\Visual Studio\C++\Vector\Vector\Vector\Vector.h(54,14): error C2737: "_Mycont": необходимо инициализировать объект const
+  (компиляция исходного файла "main.cpp")
+  
+D:\Programming\Visual Studio\C++\Vector\Vector\Vector\Vector.h(57,14): error C3536: _Mycont: не может использоваться до инициализации
+  (компиляция исходного файла "main.cpp")
+  
+D:\Programming\Visual Studio\C++\Vector\Vector\Vector\Vector.h(55,19): warning C4297: vec::_Vector_const_iterator<std::vector<int,std::allocator<int>>>::_Verify_offset: ожидается, что функция не будет выдавать исключения, но она это делает
+  (компиляция исходного файла "main.cpp")
+  D:\Programming\Visual Studio\C++\Vector\Vector\Vector\Vector.h(55,19):
+  для функции указан атрибут __declspec(nothrow), throw(), noexcept(true) или noexcept
+  
+  Vector.cpp
+  Создание кода...

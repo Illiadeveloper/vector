@@ -2,7 +2,7 @@
 
 ## **Code:** [Vector/ymemory.h](../Vector/ymemory.h#L18)
 
-    The _Compressed_pair class is a specialized container designed to reduce memory overhead by compressing two values into a single object. It optimizes memory usage when the first value is empty, achieving efficiency without sacrificing functionality.
+The _Compressed_pair class is a specialized container designed to reduce memory overhead by compressing two values into a single object. It optimizes memory usage when the first value is empty, achieving efficiency without sacrificing functionality.
 ## Example:
 ```C++
 #include <iostream>
